@@ -225,6 +225,7 @@ Microsoft Power Platform requires valid SSL certificates. Self-signed certificat
 
 ## Resources
 
+- [Using MCP with Microsoft Copilot to query Ansible Automation Platform](https://forum.ansible.com/t/using-mcp-with-microsoft-copilot-to-query-ansible-automation-platform/45483) — Ansible forum article on end-to-end Copilot + AAP MCP wiring (Roger Lopez walkthrough)
 - **Power Apps Maker Portal:** https://make.powerapps.com
 - **Copilot Studio:** https://copilotstudio.microsoft.com
 - **AAP MCP Server:** https://aap-mcp-aap.apps.cluster-wg2cd-2.dynamic2.redhatworkshops.io

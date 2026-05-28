@@ -260,6 +260,10 @@ After setup is complete:
 4. **Monitor usage** in AAP MCP server logs
 5. **Document workflows** that use the integration
 
+## References
+
+- [Using MCP with Microsoft Copilot to query Ansible Automation Platform](https://forum.ansible.com/t/using-mcp-with-microsoft-copilot-to-query-ansible-automation-platform/45483) — Community guide for querying AAP from Copilot via MCP (job failures, inventories, job templates)
+
 ## Support
 
 For issues:

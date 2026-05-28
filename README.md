@@ -71,6 +71,7 @@ Do not commit `creds.md`, `.env`, or `group_vars/all.yml`.
 
 ## References
 
+- [Using MCP with Microsoft Copilot to query Ansible Automation Platform](https://forum.ansible.com/t/using-mcp-with-microsoft-copilot-to-query-ansible-automation-platform/45483) — Ansible community walkthrough (API token, Power Apps custom connector, Copilot Studio MCP)
 - [Copilot Studio — connect MCP server](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent)
 - [Copilot Studio — extend agent with MCP](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp)
 - [Red Hat AAP MCP server](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/html/containerized_installation/deploying-ansible-mcp-server)
