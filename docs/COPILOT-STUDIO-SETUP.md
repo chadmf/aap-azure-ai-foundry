@@ -1,6 +1,25 @@
 # AAP MCP Setup for Microsoft Copilot Studio
 
-This guide walks you through connecting your Ansible Automation Platform MCP server to Microsoft Copilot Studio using Power Apps Custom Connectors.
+This guide walks you through connecting your Ansible Automation Platform MCP server to Microsoft Copilot Studio.
+
+## Recommended: MCP onboarding wizard
+
+1. Run `ansible-playbook playbooks/site.yml -e copilot_setup_mode=wizard --tags copilot_wizard`
+2. Open `copilot-setup-artifacts/MCP-SETUP-WIZARD.md`
+3. In [Copilot Studio](https://copilotstudio.microsoft.com) → your agent → **Tools** → **Add tool** → **MCP**
+4. Enter your MCP URL and Basic `Authorization` header from the guide
+
+Requires **generative orchestration** on the agent. See [Microsoft docs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent).
+
+## Alternative: Power Apps custom connector
+
+The sections below use a **Custom Connector** (OpenAPI) when you need Power Platform DLP, published connectors, or tenant governance.
+
+Generate artifacts:
+
+```bash
+ansible-playbook playbooks/site.yml -e copilot_setup_mode=connector --tags copilot_artifacts
+```
 
 ## Prerequisites
 
@@ -206,6 +225,8 @@ Microsoft Power Platform requires valid SSL certificates. Self-signed certificat
 
 ## Resources
 
+- [Using MCP with Microsoft Copilot to query Ansible Automation Platform](https://forum.ansible.com/t/using-mcp-with-microsoft-copilot-to-query-ansible-automation-platform/45483) — Ansible forum article on end-to-end Copilot + AAP MCP wiring (Roger Lopez walkthrough)
+- [Roger Lopez walkthrough — MCP, Microsoft Copilot, and Ansible Automation Platform](https://www.youtube.com/watch?v=ok_ID1Ldgds) — Video companion to the forum article on MCP + Microsoft Copilot + AAP
 - **Power Apps Maker Portal:** https://make.powerapps.com
 - **Copilot Studio:** https://copilotstudio.microsoft.com
 - **AAP MCP Server:** https://aap-mcp-aap.apps.cluster-wg2cd-2.dynamic2.redhatworkshops.io
