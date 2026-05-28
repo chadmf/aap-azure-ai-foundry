@@ -129,5 +129,6 @@ See [LEGACY-FOUNDRY.md](LEGACY-FOUNDRY.md).
 ## References
 
 - [Using MCP with Microsoft Copilot to query Ansible Automation Platform](https://forum.ansible.com/t/using-mcp-with-microsoft-copilot-to-query-ansible-automation-platform/45483) — Forum overview of Copilot + AAP MCP (custom connector, Bearer auth, example operational queries)
+- [Roger Lopez walkthrough — MCP, Microsoft Copilot, and Ansible Automation Platform](https://www.youtube.com/watch?v=ok_ID1Ldgds) — Video companion to the forum article on MCP + Microsoft Copilot + AAP
 - [ansible-tmm/mcp-demo — copilotstudio-mcp-setup](https://github.com/ansible-tmm/mcp-demo/tree/main/copilotstudio-mcp-setup)
 - [COPILOT-STUDIO-SETUP.md](COPILOT-STUDIO-SETUP.md)

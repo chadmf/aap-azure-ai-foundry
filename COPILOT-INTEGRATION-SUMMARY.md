@@ -263,6 +263,7 @@ After setup is complete:
 ## References
 
 - [Using MCP with Microsoft Copilot to query Ansible Automation Platform](https://forum.ansible.com/t/using-mcp-with-microsoft-copilot-to-query-ansible-automation-platform/45483) — Community guide for querying AAP from Copilot via MCP (job failures, inventories, job templates)
+- [Roger Lopez walkthrough — MCP, Microsoft Copilot, and Ansible Automation Platform](https://www.youtube.com/watch?v=ok_ID1Ldgds) — Video companion to the forum article on MCP + Microsoft Copilot + AAP
 
 ## Support
 
