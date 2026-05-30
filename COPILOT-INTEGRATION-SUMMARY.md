@@ -2,7 +2,13 @@
 
 ## Overview
 
-This repository now includes complete automation for integrating your Ansible Automation Platform (AAP) MCP server with Microsoft Copilot Studio via Power Platform Custom Connectors.
+**Copilot Studio is the primary integration path** (`playbooks/site.yml`). This includes:
+
+- MCP health checks and templated OpenAPI (six toolsets + unified `/mcp`)
+- **MCP onboarding wizard** guide (`MCP-SETUP-WIZARD.md`)
+- Optional Power Platform **custom connector** automation
+
+Azure AI Foundry is legacy — see `playbooks/foundry-site.yml` and `docs/LEGACY-FOUNDRY.md`.
 
 ## What Was Created
 
@@ -183,8 +189,11 @@ In Power Apps (https://make.powerapps.com):
 ## File Locations
 
 ```
-/Users/cferman/git/azure-aap-mcp/
-├── aap-mcp-openapi.yaml              # OpenAPI specification
+aap-azure-ai-foundry/
+├── aap-mcp-openapi.yaml              # Generated OpenAPI (from template)
+├── roles/copilot_mcp/                # Verify MCP, render OpenAPI, wizard template
+├── playbooks/site.yml                # Primary entry (Copilot Studio)
+├── playbooks/foundry-site.yml        # Legacy Foundry
 ├── COPILOT-SETUP-QUICK-REF.md        # Quick reference
 ├── COPILOT-INTEGRATION-SUMMARY.md    # This file
 ├── docs/
@@ -251,6 +260,11 @@ After setup is complete:
 4. **Monitor usage** in AAP MCP server logs
 5. **Document workflows** that use the integration
 
+## References
+
+- [Using MCP with Microsoft Copilot to query Ansible Automation Platform](https://forum.ansible.com/t/using-mcp-with-microsoft-copilot-to-query-ansible-automation-platform/45483) — Community guide for querying AAP from Copilot via MCP (job failures, inventories, job templates)
+- [Roger Lopez walkthrough — MCP, Microsoft Copilot, and Ansible Automation Platform](https://www.youtube.com/watch?v=ok_ID1Ldgds) — Video companion to the forum article on MCP + Microsoft Copilot + AAP
+
 ## Support
 
 For issues:
@@ -262,6 +276,4 @@ For issues:
 
 ---
 
-**Last Updated**: 2026-05-21  
-**AAP MCP Host**: aap-mcp-aap.apps.cluster-wg2cd-2.dynamic2.redhatworkshops.io  
-**Configuration**: See `group_vars/all.yml` and `creds.md` (gitignored)
+**Configuration**: See `group_vars/all.yml.example` and `creds.md` (gitignored)
